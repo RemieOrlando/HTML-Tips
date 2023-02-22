@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<!-- <pre> element defines preformatted text. -->
+<pre>
+  My Bonnie lies over the ocean.
+
+  My Bonnie lies over the sea.
+
+  My Bonnie lies over the ocean.
+
+  Oh, bring back my Bonnie to me.
+</pre>
+
+<p>
+<mark>This text is marked</mark>
+</p>
+
+<p>The <abbr title="World Health Organization">WHO</abbr> was founded in 1948.</p>
+
+<p>Marking up abbreviations can give useful information to browsers, translation systems and search-engines.</p>
+
+<p>The HTML address element defines contact information (author/owner) of a document or article.</p>
+
+<address>
+Written by John Doe.<br> 
+Visit us at:<br>
+Example.com<br>
+Box 564, Disneyland<br>
+USA
+</address>
+
+<p>The HTML cite element defines the title of a work.</p>
+<p>Browsers usually display cite elements in italic.</p>
+
+<img src="img_the_scream.jpg" width="220" height="277" alt="The Scream">
+<p><cite>The Scream</cite> by Edvard Munch. Painted in 1893.</p>
+
+<p>If your browser supports bi-directional override (bdo), the next line will be written from right to left (rtl):</p>
+
+<bdo dir="rtl">This line will be written from right to left</bdo>
+
+<!-- This is a comment -->
+
+<p>This is a paragraph.</p>
+
+<!-- Remember to add more information here -->
+
+<!-- Background Color -->
+<h1 style="background-color:DodgerBlue;">Hello World</h1>
+<p style="background-color:Tomato;">Lorem ipsum...</p>
+
+<!-- Text Color -->
+<h1 style="color:Tomato;">Hello World</h1>
+<p style="color:MediumSeaGreen;">Lorem ipsum...</p>
+
+<!-- Border Color -->
+<h1 style="border:2px solid DodgerBlue;">Hello World</h1>
+<h1 style="border:2px solid Violet;">Lorem ipsum</h1>
+
+<!-- Color Values: RGB, HEX, HSL; RGBA, and HSLA -->
+<h1 style="background-color:rgb(255, 99, 71);">...</h1>
+<h1 style="background-color:#ff6347;">...</h1>
+<h1 style="background-color:hsl(9, 100%, 64%);">...</h1>
+
+<h1 style="background-color:rgba(255, 99, 71, 0.5);">...</h1>
+<h1 style="background-color:hsla(9, 100%, 64%, 0.5);">...</h1>
+
+<!-- Inline CSS -->
+<h1 style="color:blue;">A Blue Heading</h1>
+
+<p style="color:red;">A red paragraph.</p>
+
+<!-- The target Attribute 
+The target attribute can have one of the following values:
+
+_self - Default. Opens the document in the same window/tab as it was clicked
+_blank - Opens the document in a new window or tab
+_parent - Opens the document in the parent frame
+_top - Opens the document in the full body of the window
+-->
+<a href="https://www.w3schools.com/" target="_blank">Visit W3Schools!</a>
+
+<h2>Absolute URLs</h2>
+<p><a href="https://www.w3.org/">W3C</a></p>
+<p><a href="https://www.google.com/">Google</a></p>
+
+<h2>Relative URLs</h2>
+<p><a href="html_images.asp">HTML Images</a></p>
+<p><a href="/css/default.asp">CSS Tutorial</a></p>
+
+<!-- Image as a link -->
+<a href="default.asp">
+<img src="smiley.gif" alt="HTML tutorial" style="width:42px;height:42px;">
+</a>
+
+<!-- Button as a link -->
+<button onclick="document.location='default.asp'">HTML Tutorial</button>
+
+<!-- Link Titles -->
+<a href="https://www.w3schools.com/html/" title="Go to W3Schools HTML section">Visit our HTML Tutorial</a>
+
+<!-- 
+Use the id attribute (id="value") to define bookmarks in a page
+Use the href attribute (href="#value") to link to the bookmark
+-->
+<p><a href="#C4">Jump to Chapter 4</a></p>
+<p><a href="#C10">Jump to Chapter 10</a></p>
+
+<h2>Chapter 1</h2>
+<p>This chapter explains what blue is</p>
+
+<h2>Chapter 2</h2>
+<p>This chapter explains what purple is</p>
+
+<h2>Chapter 3</h2>
+<p>This chapter explains what pink is</p>
+
+<h2 id="C4">Chapter 4</h2>
+<p>This chapter explains what red is</p>
+
+<h2>Chapter 5</h2>
+<p>This chapter explains what orange is</p>
+
+<h2>Chapter 6</h2>
+<p>This chapter explains what green is</p>
+
+<h2>Chapter 7</h2>
+<p>This chapter explains what white is</p>
+
+<h2>Chapter 8</h2>
+<p>This chapter explains what yellow is</p>
+
+<h2>Chapter 9</h2>
+<p>This chapter explains what beige is</p>
+
+<h2 id="C10">Chapter 10</h2>
+<p>This chapter explains what violet is</p>
+
+<h2>Chapter 11</h2>
+<p>This chapter explains what maroon is</p>
+
+<h2>Chapter 12</h2>
+<p>This chapter explains what black is</p>
+
+<h2>Chapter 13</h2>
+<p>This chapter explains what olive is</p>
+
+<h2>Chapter 14</h2>
+<p>This chapter explains what lavender is</p>
+
+<h2>Chapter 15</h2>
+<p>This chapter explains what aqua is</p>
+
+<!-- A favicon is a small image displayed next to the page title in the browser tab. -->
+
+</body>
+</html>
