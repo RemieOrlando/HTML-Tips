@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<style>
+table {
+  font-family: arial, sans-serif;
+  width: 100%;
+  border-radius: 8px;
+  border-spacing: 5px;
+  background-color: #FFFFCC;
+}
+
+td, th {
+  border: 1px solid black;
+  text-align: left;
+  padding: 8px;
+  border-radius: 10px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+tr:nth-child(odd) {
+  background-color: #B0E0E6;
+}
+
+tr:hover {background-color: #FFC0CB;}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111111;
+}
+
+.city {
+  background-color: powderblue;
+  color: black;
+  border: 2px solid black;
+  margin: 20px;
+  padding: 20px;
+}
+
+.note {
+  font-size: 120%;
+  color: red;
+}
+
+.capital {
+  background-color: powderblue;
+  color: black;
+  padding: 8px;
+} 
+
+.main {
+  text-align: center;
+}
+</style>
+</head>
+<body>
+
+<h1> HTML Tips: Part 2 </h1>
+
+<!-- HTML Table -->
+<h2>Conglomerates and their subsidiaries</h2>
+
+<table>
+  <tr>
+    <th>Company</th>
+    <th>Contact</th>
+    <th>Country</th>
+  </tr>
+  <tr>
+    <td>Google</td>
+    <td>Alphabet</td>
+    <td>USA</td>
+  </tr>
+  <tr>
+    <td>Samsung</td>
+    <td>The Samsung Group</td>
+    <td>South Korea</td>
+  </tr>
+  <tr>
+    <td>Sybyl</td>
+    <td>Odoo</td>
+    <td>India</td>
+  </tr>
+  <tr>
+    <td>Pepsi</td>
+    <td>Pepsico</td>
+    <td>USA</td>
+  </tr>
+  <tr>
+    <td>Sony Electronics Inc.</td>
+    <td>Sony Corporation</td>
+    <td>Japan</td>
+  </tr>
+  <tr>
+    <td>Safaricom</td>
+    <td>Vodacom</td>
+    <td>Kenya</td>
+  </tr>
+</table>
+
+<style>
+table, th, td {
+  border:1px solid black;
+  
+}
+</style>
+<body>
+
+<!-- Set the first column to 70% of the table width -->
+<h2>Personal Details</h2>
+
+<table style="width:100%">
+  <tr>
+    <th style="width:60%">Name</th>
+    <th>Age</th> 
+    <th>Height</th>
+  </tr>
+  <tr>
+    <td>Gillian Henderson</td>
+    <td>5'8</td>
+    <td>34</td>
+  </tr>
+  <tr>
+    <td>Everlyn Jackson</td>
+    <td>5'6</td>
+    <td>27</td>
+  </tr>
+  <tr>
+    <td>Joseph Hendrickson</td>
+    <td>6'4</td>
+    <td>40</td>
+  </tr>
+</table>
+
+<h2>Track Races</h2>
+
+<!-- Use the colspan attribute to have a header span over multiple columns. -->
+
+<table style="width:100%">
+  <tr>
+    <th colspan="2">Race</th>
+    <th>Record</th>
+  </tr>
+  <tr>
+    <td>100m</td>
+    <td>Sprint</td>
+    <td>9.58s</td>
+  </tr>
+  <tr>
+    <td>3000m</td>
+    <td>Steeplechase</td>
+    <td>7:53:63min</td>
+  </tr>
+</table>
+
+<h2>Table Caption</h2>
+<!-- To add a caption to a table, use the caption tag. -->
+
+<table style="width:100%">
+  <caption><b>Monthly savings<b></caption>
+  <tr>
+    <th>Month</th>
+    <th>Savings</th>
+  </tr>
+  <tr>
+    <td>January</td>
+    <td>$100</td>
+  </tr>
+  <tr>
+    <td>February</td>
+    <td>$50</td>
+  </tr>
+</table>
+
+<!-- Description List -->
+<h2>Most common Drinks</h2>
+<dl>
+  <dt>Coffee</dt>
+  <dd>- black hot drink</dd>
+  <dt>Milk</dt>
+  <dd>- white cold drink</dd>
+</dl>
+
+<br>
+
+<!-- In this example, we use CSS to style the list horizontally, to create a navigation menu: -->
+<h2>Navigation Menu</h2>
+<ul>
+  <li><a href="#home">Home</a></li>
+  <li><a href="#news">News</a></li>
+  <li><a href="#contact">Contact</a></li>
+  <li><a href="#about">About</a></li>
+</ul>
+<br>
+
+<div style="background-color:black;color:white;padding:20px;">
+  <h2>London</h2>
+  <p>London is the capital city of England. It is the most populous city in the United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
+  <p>Standing on the River Thames, London has been a major settlement for two millennia, its history going back to its founding by the Romans, who named it Londinium.</p>
+</div>
+
+<!-- The span element -->
+<h2>Eye Color</h2>
+<p>My mother has <span style="color:blue;font-weight:bold;">blue</span> eyes and my father has <span style="color:darkolivegreen;font-weight:bold;">dark green</span> eyes.</p>
+
+<div class="city">
+<h2>Beirut</h2>
+<p>Beirut is the capital of Lebanon.</p>
+</div> 
+
+<div class="city">
+<h2>Budapest</h2>
+<p>Budapest is the capital of Hungary.</p>
+</div>
+
+<div class="city">
+<h2>Antananarivo</h2>
+<p>Antananarivo is the capital of Madagascar.</p>
+</div>
+
+<h1>My <span class="note">Important</span> Heading</h1>
+<p>This is some <span class="note">important</span> text.</p>
+
+<h2>Multiple Classes</h2>
+<p>Here, all three h2 elements belongs to the "capital" class. In addition, London also belongs to the "main" class, which center-aligns the text.</p>
+
+<h2 class="capital main">London</h2>
+<h2 class="capital">Paris</h2>
+<h2 class="capital">Tokyo</h2>
+
+<h2>Use of The class Attribute in JavaScript</h2>
+<p>Click the button to hide all elements with class name "capital_city":</p>
+
+<button onclick="myFunction()">Hide elements</button>
+
+<h2 class="capital_city">Nairobi</h2>
+<p>Nairobi is the capital of Kenya.</p>
+
+<h2 class="capital_city">Kampala</h2>
+<p>Kampala is the capital of Uganda.</p>
+
+<h2 class="capital_city">Juba</h2>
+<p>Juba is the capital of South Sudan.</p>
+
+<script>
+function myFunction() {
+  var x = document.getElementsByClassName("capital_city");
+  for (var i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+}
+</script>
+
+</body>
+</html>
