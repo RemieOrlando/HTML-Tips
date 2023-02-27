@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+ <title>HTML Tips: Part 3</title>
+<style>
+#myHeader {
+  background-color: lightblue;
+  color: black;
+  padding: 40px;
+  text-align: center;
+} 
+</style>
+</head>
+<body>
+
+<h1>HTML Tips: Part 3<h1>
+<h2>The id Attribute</h2>
+<p>Use CSS to style an element with the id "myHeader":</p>
+
+<h1 id="myHeader">My Header</h1>
+
+<!-- Style the element with the id "myHeader" -->
+<style>
+#myHeader {
+  background-color: lightblue;
+  color: black;
+  padding: 40px;
+  text-align: center;
+}
+
+/* Style all elements with the class name "city" */
+.city {
+  background-color: powderblue;
+  color: black;
+  padding: 10px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.left {
+  background-color: #2196F3;
+  padding: 20px;
+  float: left;
+  width: 20%; /* The width is 20%, by default */
+}
+
+.main {
+  background-color: #f1f1f1;
+  padding: 20px;
+  float: left;
+  width: 60%; /* The width is 60%, by default */
+}
+
+.right {
+  background-color: #04AA6D;
+  padding: 20px;
+  float: left;
+  width: 20%; /* The width is 20%, by default */
+}
+
+/* Use a media query to add a break point at 800px: */
+@media screen and (max-width: 800px) {
+  .left, .main, .right {
+    width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+  }
+}
+</style>
+</head>
+<body>
+
+<h2>Difference Between Class and ID</h2>
+<p>A class name can be used by multiple HTML elements, while an id name must only be used by one HTML element within the page:</p>
+
+<!-- An element with a unique id -->
+<h1 id="myHeader">My Cities</h1>
+
+<!-- Multiple elements with same class -->
+<h2 class="city">London</h2>
+<p>London is the capital of England.</p>
+
+<h2 class="city">Paris</h2>
+<p>Paris is the capital of France.</p>
+
+<h2 class="city">Tokyo</h2>
+<p>Tokyo is the capital of Japan.</p>
+
+<!-- HTML Bookmarks with ID and Links -->
+<p><a href="#C4">Jump to Chapter 4</a></p>
+<p><a href="#C10">Jump to Chapter 10</a></p>
+
+<h2>Chapter 1</h2>
+<p>This chapter explains 1+1</p>
+
+<h2>Chapter 2</h2>
+<p>This chapter explains 2+2</p>
+
+<h2>Chapter 3</h2>
+<p>This chapter explains 3+3</p>
+
+<h2 id="C4">Chapter 4</h2>
+<p>This chapter explains 4+4</p>
+
+<h2>Chapter 5</h2>
+<p>This chapter explains 5+5</p>
+
+<h2>Chapter 6</h2>
+<p>This chapter explains 6+6</p>
+
+<h2>Chapter 7</h2>
+<p>This chapter explains 7+7</p>
+
+<h2>Chapter 8</h2>
+<p>This chapter explains 8+8</p>
+
+<h2>Chapter 9</h2>
+<p>This chapter explains 9+9</p>
+
+<h2 id="C10">Chapter 10</h2>
+<p>This chapter explains 10+10</p>
+
+<h2>Using The id Attribute in JavaScript</h2>
+<p>JavaScript can access an element with a specified id by using the getElementById() method:</p>
+
+<h1 id="myHeader1">Hello World!</h1>
+<button onclick="displayResult()">Change text</button>
+
+<script>
+function displayResult() {
+  document.getElementById("myHeader1").innerHTML = "Have a nice day!";
+}
+</script>
+
+<h2>HTML Iframes</h2>
+<p>HTML Iframes are used to display a web page within a web page.</p>
+
+<iframe src="demo_iframe.htm" name="iframe_a" style="height:200px;width:100%;border:none" title="Iframe Example"></iframe>
+
+<p><a href="https://www.w3schools.com" target="iframe_a">W3Schools.com</a></p>
+
+<p>When the target attribute of a link matches the name of an iframe, the link will open in the iframe.</p>
+
+<h1>Intro to JavaScript</h1>
+
+<button type="button"
+onclick="document.getElementById('demo').innerHTML = Date()">
+Click me to display Date and Time.</button>
+
+<p id="demo"></p>
+
+<h2>Use JavaScript to Change Text</h2>
+<!-- This example writes "Hello JavaScript!" into an HTML element with id="demo" -->
+
+<p id="demo1"></p>
+
+<script>
+document.getElementById("demo1").innerHTML = "Hello JavaScript!";
+</script>
+
+<h2>Changing Content using JS</h2>
+
+<!-- JavaScript can change the content of an HTML element -->
+
+<button type="button" onclick="myFunction()">Click Me!</button>
+
+<p id="demo3">This is a demonstration.</p>
+
+<script>
+function myFunction() { 
+  document.getElementById("demo3").innerHTML = "Hello JavaScript!";
+}
+</script>
+
+<h2>Changing Style using JS</h2>
+<p id="demo4">JavaScript can change the style of an HTML element.</p>
+
+<script>
+function myFunction1() {
+  document.getElementById("demo4").style.fontSize = "25px"; 
+  document.getElementById("demo4").style.color = "darkgrey";
+  document.getElementById("demo4").style.backgroundColor = "powderblue";       
+}
+</script>
+
+<button type="button" onclick="myFunction1()">Click Me!</button>
+
+<h2>Changing Attributes using JS</h2>
+<p>Here, a JavaScript changes the value of the src (source) attribute of an image.</p>
+
+<script>
+function light(sw) {
+  var pic;
+  if (sw == 0) {
+    pic = "pic_bulboff.gif"
+  } else {
+    pic = "pic_bulbon.gif"
+  }
+  document.getElementById('myImage').src = pic;
+}
+</script>
+
+<img id="myImage" src="pic_bulboff.gif" width="100" height="180">
+
+<p>
+<button type="button" onclick="light(1)">Light On</button>
+<button type="button" onclick="light(0)">Light Off</button>
+</p>
+
+<!-- The HTML <noscript> tag defines an alternate content to be displayed to users that have disabled scripts in their browser or have a browser that doesn't support scripts
+
+The HTML <head> element is a container for the following elements: <title>, <style>, <meta>, <link>, <script>, and <base>. 
+
+The <head> element is placed between the <html> tag and the <body> tag
+
+The <base> element specifies the base URL and/or target for all relative URLs in a page
+
+To create a responsive website, add the following <meta> tag to all your web pages: <meta name="viewport" content="width=device-width, initial-scale=1.0">
+-->
+
+<h1 style="font-size:10vw;">Responsive Text</h1>
+
+<p style="font-size:5vw;">Resize the browser window to see how the text size scales.</p>
+
+<p style="font-size:5vw;">Use the "vw" unit when sizing the text. 10vw will set the size to 10% of the viewport width.</p>
+
+<p>Viewport is the browser window size. 1vw = 1% of viewport width. If the viewport is 50cm wide, 1vw is 0.5cm.</p>
+
+<h2>Media Queries</h2>
+<p>Resize the browser window.</p>
+
+<p>Make sure you reach the breakpoint at 800px when resizing this frame.</p>
+
+<div class="left">
+  <p>Left Menu</p>
+</div>
+
+<div class="main">
+  <p>Main Content</p>
+</div>
+
+<div class="right">
+  <p>Right Content</p>
+</div>
+
+<!-- HTML Computer Code Elements
+The <kbd> - element defines keyboard input
+The <samp> - element defines sample output from a computer program
+The <code> - element defines a piece of computer code
+The <var> - element defines a variable in programming or in a mathematical expression
+The <pre> - element defines preformatted text 
+
+HTML FORMS
+<input type="text"> - Displays a single-line text input field
+<input type="radio"> - Displays a radio button (for selecting one of many choices)
+<input type="checkbox"> - Displays a checkbox (for selecting zero or more of many choices)
+<input type="submit"> - Displays a submit button (for submitting the form)
+<input type="button"> - Displays a clickable button
+-->
+
+</body>
+</html>
